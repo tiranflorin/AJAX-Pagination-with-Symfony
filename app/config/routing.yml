@@ -1,0 +1,4 @@
+acme_pagination_test:
+    resource: "@AcmePaginationTestBundle/Resources/config/routing.yml"
+    prefix:   /
+

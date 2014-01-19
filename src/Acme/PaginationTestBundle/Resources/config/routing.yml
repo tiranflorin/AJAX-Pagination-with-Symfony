@@ -1,0 +1,7 @@
+acme_pagination_test_homepage:
+    pattern:  /
+    defaults: { _controller: AcmePaginationTestBundle:Default:index }
+
+acme_pagination_test_list:
+    pattern:  /list/
+    defaults: { _controller: AcmePaginationTestBundle:Default:list }
