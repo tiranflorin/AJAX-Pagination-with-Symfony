@@ -2,6 +2,9 @@
 <div class="count">
     {{ pagination.getTotalItemCount }}
 </div>
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
 <table>
     <tr>
         {# sorting of properties based on query components #}

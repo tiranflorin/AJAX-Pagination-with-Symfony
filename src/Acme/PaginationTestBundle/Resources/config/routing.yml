@@ -1,6 +1,8 @@
 acme_pagination_test_homepage:
     pattern:  /
     defaults: { _controller: AcmePaginationTestBundle:Default:index }
+    options:
+        expose: true
 
 acme_pagination_test_list:
     pattern:  /list/

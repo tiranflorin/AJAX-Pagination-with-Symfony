@@ -14,12 +14,17 @@ class DefaultController extends Controller
             $dql   = "SELECT a FROM AcmePaginationTestBundle:Article a";
             $query = $em->createQuery($dql);
 
+            $page = $this->get('request')->get('pageId');
             $paginator  = $this->get('knp_paginator');
             $pagination = $paginator->paginate(
                 $query,
-                $this->get('request')->query->get('page', 1)/*page number*/,
+                //$this->get('request')->query->get('page', 1)/*page number*/,
+                $page,
                 2/*limit per page*/
             );
+            //set a custom paginator template
+            $pagination->setTemplate('AcmePaginationTestBundle:MyPaginationTemplate:custom_pagination.html.twig');
+
 
             // parameters to template
             return new Response($this->renderView('AcmePaginationTestBundle:Default:list.html.twig', array('pagination' => $pagination)));
@@ -39,7 +44,6 @@ class DefaultController extends Controller
             $this->get('request')->query->get('page', 1)/*page number*/,
             2/*limit per page*/
         );
-
         // parameters to template
         return $this->render('AcmePaginationTestBundle:Default:list.html.twig', array('pagination' => $pagination));
     }
