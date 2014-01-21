@@ -9,7 +9,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        if ($this->getRequest()->isXmlHttpRequest()) {
+        if ($this->container->get('request')->isXmlHttpRequest()) {
             $em    = $this->get('doctrine.orm.entity_manager');
             $dql   = "SELECT a FROM AcmePaginationTestBundle:Article a";
             $query = $em->createQuery($dql);

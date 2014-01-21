@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "18df5af4df94091d3e764dda63a2e5c9",
+    "hash": "6de2740addf748d06de59e832cb6b78e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -624,30 +624,30 @@
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
-            "version": "dev-master",
+            "version": "1.5.2",
             "target-dir": "FOS/JsRoutingBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "96abbb0a560c7ef0c4928f231e5da70a63135420"
+                "reference": "4ae129b7fbb073c6a22d56d0ff2e971e0326512e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/96abbb0a560c7ef0c4928f231e5da70a63135420",
-                "reference": "96abbb0a560c7ef0c4928f231e5da70a63135420",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/4ae129b7fbb073c6a22d56d0ff2e971e0326512e",
+                "reference": "4ae129b7fbb073c6a22d56d0ff2e971e0326512e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/console": "~2.3",
-                "symfony/framework-bundle": "~2.3",
+                "symfony/console": "~2.0",
+                "symfony/framework-bundle": "~2.0",
                 "symfony/serializer": "~2.0",
                 "willdurand/jsonp-callback-validator": "~1.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -677,7 +677,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2014-01-10 10:51:48"
+            "time": "2014-01-05 18:32:52"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1759,8 +1759,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "knplabs/knp-paginator-bundle": 20,
-        "friendsofsymfony/jsrouting-bundle": 20
+        "knplabs/knp-paginator-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
